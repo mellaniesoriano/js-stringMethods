@@ -9,19 +9,22 @@
 
 var longestPlaceName = "Taumatawhakatangihangakoauauotamateaturipukakapiki- maungahoronukupokaiwhenuakitanatahu";  //Yes, this is a real place located in Porangahau, Central Hawke's Bay.
 
-
+var howManyLetters = longestPlaceName.length;
+console.log(howManyLetters); 
 
 /*Next, concatenate and console.log the following phrase:
 "x is the longest place name in the world and has y letters in its name."
 where x represents the value at `longestPlaceName` and y represents the value at `howManyLetters`*/
 
+console.log(longestPlaceName + " is the longest place name in the world and has " + howManyLetters + " letters in its name.");
 
 /*The string.charAt() method returns the character at the specified index (position).*/
 
 /*2. Declare a variable named `fifthLetter` and find out which letter is in the 5th position in the string below. Console.log your result.*/
 
 var iDidntKnow = "The national animal of Scotland is the Unicorn";
-
+var fifthLetter = iDidntKnow.charAt(4);
+console.log(fifthLetter);
 
 
 /*The indexOf() method returns the index (position) of the first occurence of a specified text in a string.*/
@@ -29,7 +32,8 @@ var iDidntKnow = "The national animal of Scotland is the Unicorn";
 /*3. Declare a variable named `worldLocator` and find the index (position) of the word "world" in the string below. Console.log your result.*/
 
 var randomFact = "All pandas in the world are on loan from China.";
-
+var worldLocator = randomFact.indexOf("world");
+console.log(worldLocator);
 
 
 /*The slice() method extracts a part of a string and returns the extracted part into a new string. This method takes 2 parameters: the starting index (position) and the ending index (position)*/
